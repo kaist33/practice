@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!--Font Awesome-->
+	<link href="./lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!--Title-->
+  	<title>Hello, world!</title>
+	<script>
+	$(document).ready(function() {
+		$('#myModal').on('shown.bs.modal', function () { 
+			$('#myInput').trigger('focus');
+		}); 
+		
+		$('.toastSample').click(function() {
+			$('#element').toast('show');
+		});
+	});
+	</script>
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-lg-12 border">
+			<div class="col-lg-1 float-left text-dark pt-2"><h3 class="display-5"><b class="text-uppercase">WonikIPS</b></h3></div>
+			<div class="col-lg-1 d-inline-block float-left mx-1 my-3"><a href="#1" class="text-danger text-uppercase">Dashboard</a></div>
+			<div class="col-lg-1 d-inline-block float-left mx-1 my-3"><a href="#2" class="text-info text-uppercase">User Status</a></div>
+			<div class="col-lg-1 d-inline-block float-left mx-1 my-3"><a href="#3" class="text-success">MENU 3</a></div>
+			<div class="col-lg-1 d-inline-block float-left mx-1 my-3"><a href="#4" class="text-secondary">MENU 4</a></div>
+			<div class="col-lg-1 d-inline-block float-left mx-1 my-3"><a href="#5" class="text-secondary">MENU 5</a></div>
+			<div class="col-lg-1 d-inline-block float-left mx-1 my-3"><a href="#6" class="text-secondary">MENU 6</a></div>
+			<div class="col-lg-1 d-inline-block float-left mx-1 my-3"><a href="#6" class="text-secondary">MENU 7</a></div>
+			<div class="col-lg-1 d-inline-block float-left mx-1 my-3"><a href="#6" class="text-secondary">MENU 8</a></div>
+			<div class="col-lg-2 d-inline-block float-right mx-3 my-3 text-secondary">
+				<div class="col-lg-7 d-inline-block float-left text-secondary">
+					<a href="#" class="d--block text-secondary px-3"><i class="fa fa-envelope"></i><span class="badge badge-pill badge-success" style="position:absolute;">3</span></a>
+					<a href="#" class="d-inline-block text-secondary px-3 toastSample"><i class="fa fa-bell"></i><span class="badge badge-pill badge-danger" style="position:absolute;">1</span></a>
+				</div>
+				<div class="col-lg-5 d-inline-block pr-0">
+					<a href="#" id="dropdownMenu2" class="dropdown-toggle text-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USER</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<button class="dropdown-item" type="button">dropdown 1</button>
+						<button class="dropdown-item" type="button">dropdown 2</button>
+						<button class="dropdown-item" type="button">dropdown 3</button>
+						<div class="dropdown-divider"></div>
+						<button class="dropdown-item" type="button">dropdown 4</button>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="col-lg-2 float-left border p-2">
+			<div class="alert alert-dark text-black m-1 text-lowercase">LEFT CONTENTS 1</div>
+			<div class="alert alert-dark text-black m-1 text-lowercase">LEFT CONTENTS 2</div>
+			<div class="alert alert-dark text-black m-1 text-lowercase p-5">LEFT CONTENTS 3</div>
+			<div class="alert alert-dark text-black m-1 text-uppercase p-4">LEFT CONTENTS 4</div>
+		</div>
+        <div class="col-lg-8 float-right border">
+			<h1 class="text-uppercase">Main Contents</h1> 
+			<div class="col-lg-3">
+				<div class="card mb-3">
+				  <img src="bob.JPG" class="card-img-top" alt="밥아저씨" width="100%">
+				  <div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+        </div>
+        <div class="col-lg-2 float-right border">
+			Right Contents
+			<!-- Button trigger modal -->
+			<button type="button" class="col-lg-12 btn btn-warning text-white" data-toggle="modal" data-target="#exampleModal">
+				Modal Button
+			</button>
+			
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							안녕하세요?
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+      	<div class="fixed-bottom col-lg-12 bg-secondary text-white">
+			Copyright WonikIPS All Rights Reserved
+		</div>
+		<div aria-live="polite" aria-atomic="true" style="position:relative; min-height: 200px;">
+		  <!-- Position it -->
+		  <div style="position: absolute; top: 0; right: 0;width:200px;">
+
+			<!-- Then put toasts within -->
+			<div id="element" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+			  <div class="toast-header">
+				<strong class="mr-auto">Bootstrap</strong>
+				<small class="text-muted">just now</small>
+				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="toast-body">
+				See? Just like this.
+			  </div>
+			</div>
+		  </div>
+		</div>
+      </div>
+    </div>
+  </body>
+</html>
